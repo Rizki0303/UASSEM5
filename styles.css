@@ -1,0 +1,138 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Form styles */
+form {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f8f8f8;
+}
+
+/* Button for actions */
+a, form button[type="button"] {
+    background-color: #00c8ff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+a:hover, form button[type="button"]:hover {
+    background-color: #47bafd;
+}
+
+/* Link tombol Tambah Peralatan dan Tambah Pemeliharaan */
+a {
+    background-color: #00c8ff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px; /* Jarak antar tombol */
+    display: inline-block;
+    margin-bottom: 10px; /* Jarak ke bawah antar tombol */
+}
+
+a:hover {
+    background-color: #47bafd;
+}
+
+/* Jika Anda ingin menambah jarak lebih besar antar tombol, sesuaikan margin-bottom */
+
+/* Logout link */
+a[href="logout.php"] {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+a[href="logout.php"]:hover {
+    text-decoration: underline;
+}
