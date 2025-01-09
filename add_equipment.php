@@ -219,6 +219,7 @@ try {
                 <th>Nomor Seri</th>
                 <th>Tanggal Pengecekan</th>
                 <th>Status</th>
+                <th>aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -230,6 +231,12 @@ try {
                         <td><?php echo htmlspecialchars($equipment['serial_number']); ?></td>
                         <td><?php echo htmlspecialchars($equipment['purchase_date']); ?></td>
                         <td><?php echo htmlspecialchars($equipment['status']); ?></td>
+                        <td>
+                        <!-- Tombol Edit -->
+                        <a href="edit_equipment.php?id=<?php echo $equipment['id']; ?>">Edit</a> |
+                        <!-- Tombol Hapus -->
+                        <a href="delete_equipment.php?id=<?php echo $equipment['id']; ?>" onclick="return confirm('Anda yakin ingin menghapus peralatan ini?')">Hapus</a>
+                    </td>
                     </tr>
                 <?php endforeach; ?>
             <?php else: ?>
